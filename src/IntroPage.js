@@ -7,7 +7,7 @@ export default function IntroPage(props) {
       <div className={IntroPageStyles.content}>
         <div className={IntroPageStyles.text}>
           <h1>Quizzical</h1>
-          <p>Some description if needed</p>
+          <p>Welcome to the Quizzical game, have fun!</p>
         </div>
         <button onClick={props.startQuiz}>Start quiz</button>
       </div>
