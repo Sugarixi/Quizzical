@@ -1,0 +1,26 @@
+.questionMain {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.questionMain > hr {
+    border: 1px solid #DBDEF0;
+    width: 100%;
+}
+
+
+.question {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.answers {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}

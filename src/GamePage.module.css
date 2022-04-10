@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color: #F5F7FB;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    width: 100vw;
+    height: 80%;
+    font-family: 'Karla', sans-serif;
+    color: #293264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blobBlue {
+    position: fixed;
+    left: -170px;
+    bottom: -150px;
+    height: 250px;
+    width: 300px;
+    background-color: #DEEBF8;
+    border-radius: 45%;
+    transform: rotate(-7deg);
+}
+.blobYellow {
+    position: fixed;
+    right: -130px;
+    top: -130px;
+    height: 200px;
+    width: 300px;
+    background-color: #FFFAD1;
+    border-radius: 45%;
+    transform: rotate(35deg);
+}
+
+
+main > button {
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    font-size: 16px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    margin-top: 10px;
+}
+
