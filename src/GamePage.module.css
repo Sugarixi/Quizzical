@@ -54,3 +54,6 @@ main > button {
     margin-top: 10px;
 }
 
+.scoreCount {
+    color: red;
+}

@@ -22,16 +22,19 @@ export default function Question(props) {
   }
 
   function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
-    while (currentIndex !== 0) {  
+    let currentIndex = array.length,
+      randomIndex;
+
+    while (currentIndex !== 0) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
-  
+
       [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+        array[randomIndex],
+        array[currentIndex],
+      ];
     }
-  
+
     return array;
   }
 
@@ -60,20 +63,23 @@ export default function Question(props) {
     });
   }
 
-
-
   const mapButtons = answersData.map((answer) => (
     <AnswerButton
       key={answer.id}
       isHeld={answer.isHeld}
       answer={answer.text}
+      isRight={answer.text == props.valueObj.correct_answer}
+      isOver={props.isOver}
       holdAnswer={() => handleClick(answer.id, answer.text)}
     />
   ));
 
   return (
     <div className={QuestionStyles.questionMain}>
-      <div className={QuestionStyles.question} dangerouslySetInnerHTML={{__html: props.valueObj.question}}></div>
+      <div
+        className={QuestionStyles.question}
+        dangerouslySetInnerHTML={{ __html: props.valueObj.question }}
+      ></div>
       <div className={QuestionStyles.answers}>{mapButtons}</div>
       <hr />
     </div>

@@ -7,5 +7,23 @@
     font-weight: 600;
     font-size: 10.24px;
     margin-right: 20px;
+    background-color: "transparent";
+    border: "solid 1px #4D5B9E"
 }
 
+.isHeld {
+    background-color: "#D6DBF5";
+    border: "solid 1px #D6DBF5";
+}
+
+.isWrong {
+    color: red;
+}
+
+.isRight {
+    color: green;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
